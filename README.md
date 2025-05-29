@@ -136,7 +136,7 @@ python process_nlf.py "your_video_directory"
 Then, you can use the following command to animate the image guided by 4D motion tokens:
 
 ```bash
-python infer.py --ref_image_path "ref_images/hunam.png" --motion_data_path "data/sample_data.pkl" --output_path "inference_output"
+python infer.py --ref_image_path "ref_images/human.png" --motion_data_path "data/sample_data.pkl" --output_path "inference_output"
 ```
 
 - `--ref_image_path`: Path to the image of reference character.
