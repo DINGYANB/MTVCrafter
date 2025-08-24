@@ -196,7 +196,7 @@ def inference(device, motion_data_path, ref_image_path='', output_dir='inference
             smpl_poses = np.array([pose[0][0].cpu().numpy() for pose in data['pose']['joints3d_nonparam'][:num_frames*2]])
             poses = smpl_poses[sample_indexes]
         except:
-            poses = data_dict['pose'][indices]
+            poses = data['pose'][sample_indexes]
         norm_poses = torch.tensor((poses - global_mean) / global_std)
 
         # draw control/recon images
