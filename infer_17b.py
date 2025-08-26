@@ -262,7 +262,7 @@ def inference(device, motion_data_path, ref_image_path='', output_dir='inference
                         smpl_poses = np.array([pose[0][0].cpu().numpy() for pose in data_dict['pose']['joints3d_nonparam'][:min_num_frames]])
                         poses = smpl_poses[indices]
                     except:
-                        poses = data_dict['pose'][indices]
+                        poses = data['pose'][sample_indexes]
 
                     norm_poses = torch.tensor((poses - global_mean) / global_std).unsqueeze(0)
                     motion_tokens, vq_loss = vqvae(norm_poses.to(device), return_vq=True)

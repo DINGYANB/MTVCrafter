@@ -125,7 +125,7 @@ This will generate a motion-video `.pkl` file under `"your_video_directory"`.
 python infer_7b.py \
     --ref_image_path "ref_images/human.png" \
     --motion_data_path "data/sampled_data.pkl" \
-    --output_path "inference_output"
+    --output_dir "inference_output"
 ```
 
 #### ▶️ Inference of MV-DiT-17B (with text control)
@@ -133,7 +133,7 @@ python infer_7b.py \
 python infer_17b.py \
     --ref_image_path "ref_images/woman.png" \
     --motion_data_path "data/sampled_data.pkl" \
-    --output_path "inference_output" \
+    --output_dir "inference_output" \
     --prompt "The woman is dancing on the beach, waves, sunset."
 ```
 
@@ -141,7 +141,7 @@ python infer_17b.py \
 
 - `--ref_image_path`: Path to the reference character image.
 - `--motion_data_path`: Path to the SMPL motion sequence (.pkl format).
-- `--output_path`: Directory to save the generated video.
+- `--output_dir`: Directory to save the generated video.
 - `--prompt` (optional): Text prompt describing the scene or style.
 
 ---
