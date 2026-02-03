@@ -4,6 +4,8 @@
 
 <h2><a href="https://www.arxiv.org/abs/2505.10238">MTVCrafter: 4D Motion Tokenization for Open-World Human Image Animation</a></h2>
 
+ICLR 2026
+
 > Official project page of **MTVCrafter**, a novel framework for general and high-quality human image animation using raw 3D motion sequences.
 
 [Yanbo Ding](https://scholar.google.com/citations?user=r_ty-f0AAAAJ&hl=zh-CN),
